@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'fa';
+  src: url('./fa-fonts/fa.eot');
+  src: url('./fa-fonts/fa.eot') format('embedded-opentype'),
+       url('./fa-fonts/fa.woff2') format('woff2'),
+       url('./fa-fonts/fa.woff') format('woff'),
+       url('./fa-fonts/fa.ttf') format('truetype'),
+       url('./fa-fonts/fa.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.fa {
+  font-family: "fa";
+  font-style: normal;
+  font-size: inherit;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  text-rendering: auto; 
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.fa-lg {
+  font-size: (4em / 3);
+  line-height: (3em / 4);
+  vertical-align: -15%;
+}
+
+.fa-star:before { content: '\f005'; }
+.fa-star-o:before { content: '\f006'; }
+.fa-check-circle:before { content: '\f058'; }
+.fa-arrow-left:before { content: '\f060'; }
+.fa-plus:before { content: '\f067'; }
+.fa-minus:before { content: '\f068'; }
+.fa-exclamation-circle:before { content: '\f06a'; }
+.fa-exclamation-triangle:before { content: '\f071'; }
+.fa-bullhorn:before { content: '\f0a1'; }
+.fa-square:before { content: '\f0c8'; }
+.fa-money:before { content: '\f0d6'; }
+.fa-envelope:before { content: '\f0e0'; }
+.fa-cutlery:before { content: '\f0f5'; }
+.fa-external-link:before { content: '\f08e'; }

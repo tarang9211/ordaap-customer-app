@@ -1,0 +1,40 @@
+.splash {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  background-color: #CE1C2E;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAQAAAC1QeVaAAAAAmJLR0QA/4ePzL8AAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfiARMEMQ7OeEOBAAAARUlEQVQY042QWwoAIAgE9xyGUd7/kP3uBEb+LSPjQ7Ia5ak8xXa0gKajBIpWTwQ9hUhcgw7pc/Jj3/7Kx2+yR1Awoe9yHCyDBqVrxhLrAAAAAElFTkSuQmCC');
+  box-shadow: inset 0px 0px 200px 0px rgba(0, 0, 0, 0.3);
+  
+  progress {
+    -webkit-appearance: none;
+    border: none;
+    padding: 0;
+    
+    &::-webkit-progress-bar {
+      background: #CE1C2E;
+      border-radius: 50px;
+      box-shadow: 0 1px 1px 0px rgba(255, 255, 255, 0.3);
+    }
+    &::-webkit-progress-value {
+      background-color: rgba(255,255,255,0.95);
+      border-radius: 50px;
+      transition: all ease;
+    }
+    
+    &.is-small {
+      height: 0.25rem;
+      width: 25%;
+      position: absolute;
+      bottom: 20%;
+
+    }
+  }
+}

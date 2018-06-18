@@ -1,0 +1,64 @@
+.banner-image {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 30vh;
+  width: 100%;
+  background-color: #CCC;
+  // transition: all 5s ease;
+
+  // &.expanded{
+  //   height: 80vh;
+  // }
+
+}
+// & + .container {
+//   transition: margin 1s ease;
+//   margin-top: 30vh;
+//   z-index: 20;
+//   .banner {
+//     .title {
+//       margin-top: -3.75rem;
+//     }
+//     .subtitle{
+//       transition: opacity 1s ease;
+//     }
+//   }
+// }
+
+
+
+.banner {
+  z-index: 5;
+  margin-top: -3rem;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+
+  .title {
+    font-weight: bold; 
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    line-height: 1.5rem;
+    padding-top: 1.25rem;
+    padding-bottom: 0.5rem;
+    background-color: #FFF;
+    margin-bottom: 0;
+    border-top-left-radius: 3.5rem;
+    border-top-right-radius: 3.5rem;
+  }
+
+  .subtitle {
+    margin-top: 0 !important;
+    margin-bottom: 0rem;
+    background-color: #FFF;
+    padding-bottom: 0.25rem;
+  }
+
+  hr {
+    width: 100%;
+    border: 0;
+    height: 1px;
+    background: #CCC;
+    margin: 0;
+  }
+}

@@ -1,0 +1,33 @@
+// Override to place action items in the center
+.camera-access-modal {
+  .modal-background {
+    z-index: 10;
+  }
+  .modal-card {
+    max-width: 360px;
+    border-radius: 3px;
+    z-index: 50;
+    .modal-card-body{
+      padding: 1rem 0.75rem;
+      .steps {
+        margin-top: 1rem;
+        li {
+          margin: 4px 0 4px 20px;
+        }
+        .icon {
+          vertical-align: text-bottom;
+        }
+      }
+    }
+    .modal-card-foot {
+      padding: 1rem 0.75rem;
+      justify-content: space-around;
+      border-bottom-left-radius: 3px;
+      border-bottom-right-radius: 3px;
+      
+      .button {
+        min-width: 5rem;
+      }
+    }
+  }
+}

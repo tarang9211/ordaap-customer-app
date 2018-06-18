@@ -1,0 +1,7 @@
+export { default as Home } from './home'
+export { default as MenuSelection } from './menu-selection'
+export { default as OrderConfirmation } from './order-confirmation'
+export { default as ScanQR } from './scan-qr'
+export { default as Billing } from './billing'
+export { default as FeedbackPage } from './feedback-page'
+export { default as Hotel } from './hotel'

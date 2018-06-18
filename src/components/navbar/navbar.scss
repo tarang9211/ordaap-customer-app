@@ -1,0 +1,37 @@
+@import "bulma/sass/utilities/_all";
+
+.navigation-bar {
+  width: 100%;
+  max-width: inherit;
+  
+  .title {
+    font-weight: bold;
+  }
+
+  &.is-fixed {
+    height: 4rem;
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      max-width: inherit;
+      z-index: 20;
+    }
+  }
+
+  .navbar {
+    border-bottom: 1px solid #CCC;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    a.navbar-item {
+      &:hover{
+        background-color: $white;
+        color: $grey-dark;
+      }
+      &:active {
+        background-color: $background;
+        color: $black;
+      }
+    }
+  }
+}

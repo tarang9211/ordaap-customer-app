@@ -1,0 +1,179 @@
+$primary: #CE1C2E;
+
+.loader {
+  position: fixed;
+  z-index: 100;
+  top: 50%;
+  left: 50%; 
+  width: 4rem;
+  height: 4rem;
+  margin-left: -2rem;
+  margin-top: -2rem;
+  transform: scale(0.75);
+
+  .container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    & > div {
+      position: absolute;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      width: 32px;
+      height: 32px;
+      left: -64px;
+      & > div {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background: $primary;
+        box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+        position: absolute;
+        left: 32px;
+        -webkit-animation: ellipsis 1.6s cubic-bezier(0, 0.5, 0.5, 1) infinite forwards;
+        animation: ellipsis 1.6s cubic-bezier(0, 0.5, 0.5, 1) infinite forwards;
+      }
+    }
+    
+    div:nth-child(1) div {
+      -webkit-animation: ellipsis2 1.6s cubic-bezier(0, 0.5, 0.5, 1) infinite forwards;
+      animation: ellipsis2 1.6s cubic-bezier(0, 0.5, 0.5, 1) infinite forwards;
+      background: $primary; 
+    }
+
+    div:nth-child(2) div {
+      -webkit-animation-delay: -0.8s;
+      animation-delay: -0.8s;
+      background: $primary;
+    }
+
+    div:nth-child(3) div {
+      -webkit-animation-delay: -0.4s;
+      animation-delay: -0.4s;
+      background: $primary;
+    }
+
+    div:nth-child(4) div {
+      -webkit-animation-delay: 0s;
+      animation-delay: 0s;
+      background: $primary;
+    }
+
+    div:nth-child(5) div {
+      -webkit-animation: ellipsis3 1.6s cubic-bezier(0, 0.5, 0.5, 1) infinite forwards;
+      animation: ellipsis3 1.6s cubic-bezier(0, 0.5, 0.5, 1) infinite forwards;
+      background: $primary;
+    }
+  }
+}
+
+@-webkit-keyframes ellipsis3 {
+  0%, 25% {
+    left: 32px;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  50% {
+    left: 32px;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  75% {
+    left: 100px;
+  }
+  100% {
+    left: 168px;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes ellipsis3 {
+  0%, 25% {
+    left: 32px;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  50% {
+    left: 32px;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  75% {
+    left: 100px;
+  }
+  100% {
+    left: 168px;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes ellipsis2 {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  25%, 100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+}
+@keyframes ellipsis2 {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  25%, 100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+}
+@-webkit-keyframes ellipsis {
+  0% {
+    left: 32px;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  25% {
+    left: 32px;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    left: 100px;
+  }
+  75% {
+    left: 168px;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    left: 168px;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+}
+@keyframes ellipsis {
+  0% {
+    left: 32px;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  25% {
+    left: 32px;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    left: 100px;
+  }
+  75% {
+    left: 168px;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    left: 168px;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+}

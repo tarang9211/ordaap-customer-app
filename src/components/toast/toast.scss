@@ -1,0 +1,54 @@
+.toast {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  max-width: inherit;
+  background-color: transparent !important;
+  
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+
+  -webkit-perspective: 1000px;
+  -moz-perspective: 1000px;
+  -ms-perspective: 1000px;
+  perspective: 1000px;
+
+  -webkit-transform: translate3d(0, -200px, 0);
+  -moz-transform: translate3d(0, -200px, 0);
+  -ms-transform: translate3d(0, -200px, 0);
+  -o-transform: translate3d(0, -200px, 0);
+  transform: translate3d(0, -200px, 0);   
+
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+  -moz-transition: -moz-transform 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+  -ms-transition: -ms-transform 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+  -o-transition: -o-transform 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+  transition: transform 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+  
+  &.is-shown {
+    -webkit-transform: translate3d(0, 0px, 0);
+    -moz-transform: translate3d(0, 0px, 0);
+    -ms-transform: translate3d(0, 0px, 0);
+    -o-transform: translate3d(0, 0px, 0);
+    transform: translate3d(0, 0px, 0);
+  }
+  
+  .notification {
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0px 2px 1px rgba(0,0,0,0.5);
+    border-radius: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    span {
+      margin: 0rem 0.5rem;
+      text-align: left;
+    }    
+  }
+}

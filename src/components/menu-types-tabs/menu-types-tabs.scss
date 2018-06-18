@@ -1,0 +1,58 @@
+.menu-types {
+
+  .sticky-outer-wrapper{
+      
+    .sticky-inner-wrapper{
+      z-index: 2;
+      background-color: #FFF; 
+      :after {
+        content: " ";
+        transition: background-color 0.5s ease;
+      }
+    }
+    &.active{
+      .sticky-inner-wrapper{
+        :after {
+          content: " ";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          height: 1px;
+          width: 100%;
+          background-color: rgb(204, 204, 204);
+        }
+      }
+    }
+  }
+
+  
+  .section{
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+
+  .tabs {
+
+    ul {  
+      border: none;
+
+      li {
+        min-width:60px;
+
+        &:active {
+          background-color: #EEE;
+        }
+      }
+    }
+
+    .is-active {
+      text-decoration: underline;
+    }
+
+    a {
+      color: black !important;
+      text-transform: uppercase;
+    }
+  }
+}

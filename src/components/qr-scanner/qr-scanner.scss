@@ -1,0 +1,220 @@
+$ordaap-primary: #CE1C2E;
+
+.qr-scanner {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  padding: 3rem 1.5rem;
+  flex-grow: 1;
+  flex-shrink: 0;
+  background-color: #ffffff;
+  background-image: url("./diamond-plus.png");;
+  box-shadow: inset 0px 0px 200px 0px rgba(0,0,0,0.1);
+
+  .container {
+    position: relative;
+
+    .instructions {
+      position: absolute;
+      top: -25%;
+      left: 0;
+      right: 0;
+    }
+    
+    &.with-image {
+      .view-finder {
+        &::after {
+          background-image: none;
+        }
+      }
+    }
+
+    .view-finder {
+      position: relative;
+      height: 85vw;
+      width: 85vw;
+      max-height: 320px;
+      max-width: 320px;
+      overflow: hidden;
+      border: 3px dashed $ordaap-primary;
+      background: #FFF;
+      border-radius:1.5rem;
+      margin: auto;
+
+      &::after {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-image: url('./qr-code.png');
+        background-repeat: no-repeat;
+        background-size: 75%;
+        background-position: center;
+        opacity: 0.2;
+        top: 0px;
+        left: 0px;
+      }
+  
+      img{
+        display:none!important;
+      }
+  
+      img[src]{
+        display:inline!important;
+        opacity: 0.2;
+      }
+
+      video {
+        height: 100% !important;
+        width: 100% !important;
+        border: 5px solid #FFF;
+        border-radius: 1.5rem;
+      }
+    }
+
+    .rounded{
+      position: absolute;
+      margin: auto;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 50%;
+      width: 50%;
+      max-height: 160px;
+      max-width: 160px;
+      border-radius: 100%;
+      background-color: $ordaap-primary;
+      font-weight: bold;
+      font-size: 1.25rem;
+      background-image: url("./diamond.png");
+      :active, :hover{
+        background-color: darken($color: $ordaap-primary, $amount: 10);
+      }
+    }
+
+    .error-text {
+      position: absolute;
+      bottom: -5%;
+      left: 0;
+      right: 0;
+    }
+
+    .continue-order {
+      position: absolute;
+      top: 110%; 
+      left: 0;
+      right: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+    }
+  }
+}
+
+.qr-scanner-modal {
+
+  .modal-card {
+    max-width: 360px;
+    border-radius: 3px;
+  }
+
+  .modal-card-body {
+    background-color: #ffffff;
+    background-image: url("./diamond-plus.png");
+    box-shadow: inset 0px 0px 200px 0px rgba(0,0,0,0.1);
+  }
+
+  .container {
+    position: relative;
+    height: 85%;
+    width: 85%;
+    max-height: 320px;
+    max-width: 320px;
+    overflow: hidden;
+
+    &.with-image {
+      .view-finder {
+        &::after {
+          background-image: none;
+        }
+      }
+    }
+
+    .view-finder {
+      position: relative;
+
+      border: 3px dashed $ordaap-primary;
+      background: #FFF;
+      border-radius:1.5rem;
+      margin: auto;
+
+      &::after {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-image: url('./qr-code.png');
+        background-repeat: no-repeat;
+        background-size: 75%;
+        background-position: center;
+        opacity: 0.2;
+        top: 0px;
+        left: 0px;
+      }
+  
+      img{
+        display:none!important;
+      }
+  
+      img[src]{
+        display:inline!important;
+        opacity: 0.2;
+      }
+
+      video {
+        height: 100% !important;
+        width: 100% !important;
+        border: 5px solid #FFF;
+        border-radius: 1.5rem;
+      }
+    }
+
+    .rounded{
+      position: absolute;
+      margin: auto;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 50%;
+      width: 50%;
+      max-height: 160px;
+      max-width: 160px;
+      border-radius: 100%;
+      background-color: $ordaap-primary;
+      font-weight: bold;
+      font-size: 1.25rem;
+      background-image: url("./diamond.png");
+      :active, :hover{
+        background-color: darken($color: $ordaap-primary, $amount: 10);
+      }
+    }
+
+    .error-text {
+      position: absolute;
+      bottom: -5%;
+      left: 0;
+      right: 0;
+    }
+
+  }
+}

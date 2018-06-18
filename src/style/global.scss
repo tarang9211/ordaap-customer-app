@@ -1,0 +1,21 @@
+a {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent; /* For some Androids */
+}
+label {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent; /* For some Androids */
+}
+button {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent; /* For some Androids */
+}
+[role="button"]:hover:active:not(.fab) {
+  background-color: #EEE;
+}
+[role="button"]:focus {
+  outline: none;
+}
+[role="link"]:focus {
+  outline: none;
+}

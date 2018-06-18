@@ -1,0 +1,43 @@
+.button-group-spacer{
+  background:#FFF;
+  height:6rem;
+}
+
+.button-group {
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  position: relative;
+  width: 100%;
+  padding: 0.75rem;
+
+  &.is-fixed{
+    position: fixed;
+    width: 100%;
+    max-width: inherit;
+    bottom: 0;
+    background: rgba(255,255,255,0.5);
+    z-index: 30
+  }
+
+  .button {
+    justify-content: space-around !important;   
+    flex-grow: 1;
+    &:not(:first-child){
+      margin-left: 0.25rem;
+    }
+    &:not(:last-child){
+      margin-right: 0.25rem;
+    }
+     
+  }
+
+  .is-success:not(:only-child) {
+    flex-grow: 2;
+  }
+  
+}

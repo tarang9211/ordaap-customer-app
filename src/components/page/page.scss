@@ -1,0 +1,13 @@
+@import "bulma/sass/utilities/_all";
+@import "bulma/sass/elements/container";
+
+.page {
+  @extend .container;
+  min-height: 100%;
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #FFF;
+}
+

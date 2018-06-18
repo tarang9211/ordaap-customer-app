@@ -1,0 +1,59 @@
+.placeholder{
+  background: repeating-linear-gradient(-45deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.1) 100%);
+  width: 40%;
+  height: 1rem;
+  display: inline-block;
+  animation: wave 2s linear infinite;
+  background-color: #CCC;
+  background-size: 200% 200%;
+}
+
+h1.placeholder{
+  height: 1.5rem;
+}
+
+h2.placeholder{
+  height: 1.25rem;
+}
+
+h3.placeholder{
+  height: 1rem;
+}
+
+h6.placeholder{
+  height: 1rem;
+}
+
+p.placeholder{
+  height: 3rem;
+  width:100%;
+}
+
+span.placeholder{
+  width:80%;
+}
+
+h4.title.is-4 .placeholder{
+  height: 2rem;
+  width: 10rem;
+}
+
+h6.subtitle.is-6 .placeholder{
+  height:0.75rem;
+}
+
+@-webkit-keyframes wave {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes wave {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes wave { 
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}

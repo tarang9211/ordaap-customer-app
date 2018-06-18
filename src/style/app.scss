@@ -1,0 +1,28 @@
+$primary: #CE1C2E;
+
+// Bulma: variables, mixins and resets
+@import "bulma/sass/utilities/_all";
+@import "bulma/sass/base/_all";
+
+// Bulma: typography
+@import "bulma/sass/elements/title";
+
+// Bulma: others
+@import "bulma/sass/elements/icon";
+@import "bulma/sass/elements/form";
+@import "bulma/sass/elements/button";
+@import "bulma/sass/elements/tag";
+@import "bulma/sass/elements/notification";
+@import "bulma/sass/elements/box";
+@import "bulma/sass/layout/hero";
+@import "bulma/sass/components/tabs";
+@import "bulma/sass/components/level";
+@import "bulma/sass/components/navbar";
+@import "bulma/sass/components/panel";
+@import "bulma/sass/components/modal";
+@import "bulma/sass/grid/columns";
+
+// Custom
+@import "./global.scss";
+@import "./placeholder.scss";
+@import "./fa.scss";
